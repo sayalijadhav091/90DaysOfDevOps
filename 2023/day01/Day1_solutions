@@ -1,0 +1,43 @@
+#This File is Written by Sayali Jadhav
+
+Day1:Introduction to DevOps
+
+What is DevOps?
+DevOps is a combination of software developers (dev) and operations (ops). It is defined as a software engineering methodology that aims to integrate the work of software development and software operations teams by facilitating a culture of collaboration and shared responsibility. DevOps increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.
+
+[link]( https://as2.ftcdn.net/v2/jpg/04/02/64/43/1000_F_402644384_lXsLIS7b7DzOlp5hKIiviI8htMHnK8tw.jpg)
+
+What is Automation?
+Automation is the ability to use technology to perform tasks with minimal human effort. automation can be used in various industries. automation describes the tools, techniques, and strategies designed to minimize labor, freeing up human workers to focus on other responsibilities. Automation can be used to improve efficiency and speed by eliminating the need for manual processes also it can help reduce the risk of errors.
+
+What is Scaling?
+Scaling is defined as the ability of an IT resource to handle growing or decreasing demands in a capable manner. It is the ability of a system to accommodate larger or smaller loads. It is possible to scale the application easily when you are expecting traffic and it is also easier to downgrade if you have a lot of resources that are not getting used currently.
+
+What is Infrastructure?
+In the context of DevOps, Infrastructure refers to the concept that revolves around the idea of managing infrastructure with the help of automation and configuration management tools. This is done with the help of certain tools or programs which can help to carry out the tasks automatically. Managing infrastructure in this way can help to improve the reliability, scalability, and security of the infrastructure.
+
+Why DevOps is important?
+1)Reduced Time to Market:
+DevOps is important because it allows you to produce software faster because of improved procedures, automation, and release planning, among other things. Continuous delivery allows teams to build, test, and deliver software with automated tools.
+
+2)Better collaboration between teams:
+Build more effective teams under a DevOps cultural model, which emphasizes values such as ownership and accountability. Developers and operations teams collaborate closely, share many responsibilities, and combine their workflows.
+
+3)Reliability:
+The development, deployment, and other processes become more reliable and less prone to errors. Monitoring and logging practices help you stay informed of performance in real-time.
+
+4)Security:
+By incorporating security testing and monitoring into the development and deployment process, DevOps can help to improve the security of systems. This can help to protect against vulnerabilities and threats and can help to ensure that systems are compliant with relevant security standards and regulations.
+
+What are the common technologies used in DevOps?
+1) Version control systems: Git
+
+2) Configuration management tools: Ansible
+
+3)Continuous integration tools: Jenkins
+
+4) Containerization technologies: Docker
+
+5)Cloud platforms: AWS, Azure, GCP
+
+6) Monitoring tools: Nagios

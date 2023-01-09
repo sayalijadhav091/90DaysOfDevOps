@@ -1,0 +1,40 @@
+#This File is written by Sayali Jadhav
+
+What is Kernel?
+The kernel is a computer program that is the core of a computer’s operating system, with complete control over everything in the system.
+
+What is Shell?
+A shell is a special user program that provides an interface for the user to use operating system services. Shell accepts human-readable commands from users and converts them into something which the kernel can understand. It is a command language interpreter that executes commands read from input devices such as keyboards or from files. The shell gets started when the user logs in or starts the terminal.
+
+What is Linux Shell Scripting for DevOps?
+Shell Scripting is a way to automate tasks in a linux operating system. It is a sequence of code or text that contains commands as a input from users and execute them. Shell Scripting is a program to write a series of commands for the shell to execute.A shell script is usually created for command sequences in which a user has a need to use repeatedly in order to save time.
+
+What is #!/bin/bash?
+#!/bin/bash is the first line of the script and is called Shebang. Shebang tells the shell to execute it via bash shell. Shebang is simply an absolute path to the bash interpreter.
+
+Can we write #!/bin/sh as well?
+Yes, we can use #!/bin/sh to specify the path to the Bourne Shell (sh) interpreter.
+The Bourne Shell is another commonly used shell in Unix-based operating systems.
+
+Write a Shell Script that prints “I will complete #90DaysofDeVops challenge"
+#!/bin/bash
+echo "I will complete #90daysofDevops challenge"
+
+Write a Shell Script to take user input, input from arguments, and print the variables.
+#!/bin/bash
+echo "what is your name"
+read name
+echo "Your name is $name"
+
+Write an Example of If else in Shell Scripting by comparing two numbers
+#!/bin/bash
+echo "Enter first number:"
+read a
+echo "enter second number:"
+read b
+if [ $a -gt $b ]
+then 
+echo "a is greater than b"
+else
+echo "b is greater than a"
+fi

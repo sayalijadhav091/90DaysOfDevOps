@@ -1,0 +1,94 @@
+#This File is Written by Sayali Jadhav.
+
+What is the linux command to:
+
+1)To view what's written in a file:
+i)cat
+Cat simply prints the content of the file to standard display i.e. your screen.
+
+ii)less
+Less command views the file one page at a time.
+
+2)To change the access permissions of files:
+
+The chmod command enables you to change the permissions on a file. You must be superuser or the owner of a file or directory to change its permissions.
+In Linux, there are three types of owners: user, group, and others. File permissions fall in three categories: Read, Write, and Execute
+we can find permissions of files and folders using long listing "ls -l" on a Linux terminal.
+d represents a directory and - represents a regular file.
+
+Syntax of chmod:
+chmod permissions filename
+
+Permissions can be changed using two modes:
+i)Symbolic mode
+ii)Absolute mode
+
+examples: i) chmod u+x file.txt
+          ii) chmod 777 file.txt
+
+3)Linux command to check which commands you have run till now.
+
+'history' command is used to check the commands you have run till now.
+Ex: history
+
+4)Linux command to remove a directory/ Folder.
+
+To remove an empty directory, use the rmdir command
+To remove a directory and all its contents, including any subdirectories and files use: rm
+
+5)Linux command to create a fruits.txt file and to view the content.
+
+We are going to use the touch command to create the file and cat command to view the content of the file
+touch fruits.txt
+cat fruits.txt
+
+6)Linux command to add content in fruits.txt (One in each line) — Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+
+we are going to add content in fruits.txt file by using vim editor
+vim fruits.txt
+press i (insert)
+Apple
+Mango
+banana
+cherry
+Kiwi
+Orange
+Guava
+Esc(escape)
+:wq(write and quit that file)
+
+7)Linux command to show only the top three fruits from the file.
+
+To show only the first three fruits we will use head command with -n option
+e.g head -3 fruits.txt
+
+8)Linux command to show only the bottom three fruits from the file.
+
+To show only the bottom three fruits we will use tail command with -n option
+e.g tail -3 fruits.txt
+
+9)To create another file Colors.txt and to view the content.
+
+We are going to use the touch command to create the file and cat command to view the content of the file
+touch colors.txt
+cat colors.txt
+
+10)Add content in Colors.txt (One in each line) — Red, Pink, White, Black, Blue, Orange, Purple, Grey.
+
+vim colors.txt
+Press i(insert)
+Red
+Pink
+White
+Black
+Blue
+Orange
+Purple
+Grey
+Esc(escape)
+:wq(write and quit that file)
+
+11)To find the difference between the fruits.txt and Colors.txt files.
+
+To find the difference between the content of two files we can use the diff command.
+eg: diff fruits.txt Colors.txt

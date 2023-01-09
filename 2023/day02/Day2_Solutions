@@ -1,0 +1,29 @@
+#This File is Written by Sayali Jadhav
+
+What is Linux?
+
+Linux is an open-source operating system, It is a freely available operating system that can be installed on a wide range of devices such as desktops, servers, smartphones and tablets, supercomputers etc.
+An operating system (OS) is a system of software that manages computer hardware, software resources and provide common services for computer programs.
+
+Basic Linux Commands:
+
+1)Linux command to check your present working directory:
+
+pwd : It gives the present or current working directory.
+example:pwd
+
+2)Linux Command to list all the files or directories including hidden files:
+
+The ls command lists files and directories within a system. Running it without an option will show the current working directories content.
+ls -la is the command to list all the files or directories including hidden files
+l will display a long listing format of content.
+a will list all the including hidden files and directories.
+
+
+3)Linux command to create a nested directory A/B/C/D/E:
+
+command to create a nested directory is
+mkdir -p A/B/C/D/E
+-p is for no error if existing, make parent directories as needed
+
+tree command is used to show the nested directory.

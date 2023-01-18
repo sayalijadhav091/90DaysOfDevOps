@@ -1,0 +1,260 @@
+#This the cheatsheet of Linux and Git created by Sayali Jadhav.
+
+Linux Basic Commands
+
+To check your present working directory:
+pwd
+
+List all the files or directories:
+ls
+
+Lists hidden files or directories:
+ls -a
+
+Long listing format:
+ls -l
+
+Lists files in sub-directories as well:
+ls -R
+
+Lists files and directories with detailed information like permissions, size, owner,etc:
+ls -la
+
+Create new directory:
+mkdir<directory_name>
+
+Multiple directory creation:
+mkdir -p A/B/C/D
+
+Remove directory(Empty directories only):
+rmdir<directory_name>
+
+Remove multiple directories(the write-protected directory contains other files and subdirectories):
+rm -rf <directory_name>
+
+change directory:
+cd or cd~
+
+Move to the root directory:
+cd/
+
+To change to a particular directory:
+cd
+
+Allows regular users to run programs with the security privileges of the superuser or root:
+sudo
+
+create an empty file:
+touch <file_name>
+
+Deletes a file:
+rm <file_name>
+
+Copy file:
+cp <source_path> <destination_path>
+
+move file:
+mv <source_path> <destination_path>
+
+To write some content inside a file:
+echo <some_msg> > <file_name>
+
+Displays the file contents:
+cat <file_name>
+
+Gives a list of all past commands typed in the current terminal session:
+history
+
+Clears the terminal:
+clear
+
+To search a word (string in a file):
+grep "string" <file_name>
+
+Return the specified number of lines from the top:
+head
+
+Return the specified number of lines from the bottom:
+tail
+
+Display disk filesystem information:
+df
+
+Mount file systems:
+mount
+
+Display the user manual of any command:
+man
+
+Find the files and directories path:
+find
+
+List the hostname of the server:
+hostname
+
+File Permission commands
+
+To change the permission of the file:
+chmod <permission> <file_name>
+
+to show file type and access permission:
+ls -l
+
+0 - nothing  4 - only read 2 - only  write 1 - only execute  4+1 = 5 read and execute  4+2 = 6 read and write both  4+2+1 = 7 read, write and execute  r -read w - write x -execute  u -user g -group o -other
+
+To change file or directory ownership:
+chown <user-name> <file_name>
+
+To change group ownership:
+chgrp <group_name> <file_name>
+
+User management commands of Linux
+To create a new user :
+sudo useradd <user_name>
+
+To set a password for the user:
+sudo passwd <user_name>
+
+To modify a Linux user:
+sudo usermod <user_name>
+
+To delete a Linux user:
+sudo userdel <user_name>
+
+For adding a group account:
+sudo groupadd <group_name>
+
+To add a user to a group:
+sudo usermod -a -G GROUPNAME USERNAME
+
+To remove a user from a group:
+sudo deluser USER GROUPNAME
+
+Gives information about a particular user:
+finger
+
+Lists all files and directories in the present working directory:
+finger username
+
+Access Control List:
+setfacl and getfacl are used for setting up ACL and showing ACL respectively.
+
+For checking ACL permission:
+getfacl <name of file or directory>
+
+To set ACL permission to the user:
+setfacl -m u:user:permissions /path_to_file
+
+Git Commands:
+
+Git Configuration:
+To set author name to be used for all commits by the current user:
+git config --global user.name "<name>"
+
+To set author email to be used for all commits by the current user:
+git config --global user.email "<email address>"
+
+To show config info:
+git config --list
+
+Git Basics:
+Initialize an empty git repository: transforms the current directory into a Git list of all remote repositories that are currently connected to your local repository:repository.
+git init
+
+Clone an existing git repository:
+git clone <repository_url>
+
+Add files and Moves changes from the working directory to the staging area:
+git add <file_name>
+
+Add all current directory files to git :
+git add .
+
+Commit all the staged files to git.
+git commit -m "commit message"
+
+To show the status of your git repository:
+git status
+
+To check your git commits and all logs:
+git log
+
+Show unstaged changes between your index and working directory:
+git diff
+
+GIT BRANCHES
+
+To list all of the branches:
+git branch
+
+Create a new branch:
+git branch <branch_name>
+
+For creating and going to that branch:
+git checkout -b <branch>
+
+For going to specific branch:
+git checkout <branch_name>
+
+For deleting branch:
+git branch -d <branch_name>
+
+Merge <branch>into the current branch:
+git merge <branch_name>
+
+Remote Repositories:
+
+List of all remote repositories that are currently connected to local repository:
+git remote -v
+
+To add remote origin URL:
+git remote add origin <remote_git_url>
+
+To remove the remote origin URL:
+git remote remove origin
+
+To upload local repository content to a remote repository:
+git push origin <branch_name>
+
+To pull your remote repository content to local repository:
+git pull origin <branch_name>
+
+To fetch down all the branches from that Git remote:
+git fetch
+
+Cherry-pick:
+
+Merge just one specific commit from another branch to your current branch:
+git cherry-pick [commit_id]
+
+git revert:
+
+Undo a single given commit, without modifying commits that come after it:
+git revert <commit_id>
+
+git reset:
+
+Go back to specific commit:
+git reset <commit_id>
+
+git rebase:
+
+To rebase all the commits between another branch and the current branch state:
+git rebase <other_branch_name>
+
+Temporary commits:
+
+To save modified and staged changes:
+git stash
+
+List stack-order of stashed file changes:
+git stash list
+
+write working from top of stash stack:
+git stash pop
+
+Discard the changes from the top of the stash stack:
+git stash drop
+
+apply the stash without removing it from the list:
+git stash apply
